@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+
 import plotly.express as px
 
 st.set_page_config(page_title="Dashboard",layout="centered")
@@ -20,8 +21,5 @@ st.subheader("Data preview")
 st.write(df.head(10))
 st.link_button("dataset link","https://www.kaggle.com/datasets/mikhail1681/walmart-sales")
 st.code("""import kagglehub
-
-# Download latest version
 path = kagglehub.dataset_download("mikhail1681/walmart-sales")
-
 print("Path to dataset files:", path)""", language="python")
